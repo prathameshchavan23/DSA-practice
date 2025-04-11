@@ -15,8 +15,8 @@ public class methods {
         int x = sc.nextInt();
         int y = sc.nextInt();
         System.out.print("Sum of input no.s is: ");
-       int ans = obj.add(x, y);
-       System.out.println(ans);
+        int ans = obj.add(x, y);
+        System.out.println(ans);
 
     }
 }

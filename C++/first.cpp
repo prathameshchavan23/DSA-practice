@@ -1,9 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    cout<<"hello myself prathmesh"<<endl;
-    cout<<"hello myself prathmesh";//end line
-    cout<<3*2;
 
+    int row, col;
+    for (row = 1; row <= 5; row++)
+    {
+        for (col = 1; col >=5-row+1; col--)
+        {
+            cout <<col;
+        }
+        cout << endl;
+    }
 }

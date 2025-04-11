@@ -40,7 +40,7 @@ public class switchstatements {
                 System.out.println("Rahul");
                 break;
             case 3:
-            System.out.println("Emp no 3");
+                System.out.println("Emp no 3");
                 switch (department) {
                     case "IT":
                         System.out.println("IT department");

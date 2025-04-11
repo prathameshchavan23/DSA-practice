@@ -8,6 +8,7 @@ public class recurringdigitcount {
             n = n / 10; // To remove the last digit we use /10
             if (rem == 5) {
                 count++;
+                //*  The digit 5 appears 3 times in 4555336, so the program prints 3.
             }
         }
         System.out.println(count);

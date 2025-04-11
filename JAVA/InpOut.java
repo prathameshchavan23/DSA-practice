@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class InpOut {
     public static void main(String[] args) {
-        // Input Using command Line argument: javac(for compile) and java(for input)
+        // * Input Using command Line argument: javac(for compile) and java(for input)
         // System.out.println(args[0]);// Index 0 out of bounds for length 0, array jab
         // create nhi hota hai
 
@@ -45,31 +45,28 @@ public class InpOut {
 
         // BigDecimal - nextBigDecimal()
 
-//        BufferedReader Vs Scanner
+        // BufferedReader Vs Scanner
 
-// .BufferedReader is a very basic way to read the input generally used to read
-// the stream of characters.
+        // .BufferedReader is a very basic way to read the input generally used to read
+        // the stream of characters.
 
-// .Buffer Reader is faster over scanner and can take more larger size input
-// because Scanner does lots of post-processing for parsing the input; as seen
-// in nextint(), nextFloat()
+        // .Buffer Reader is faster over scanner and can take more larger size input
+        // because Scanner does lots of post-processing for parsing the input; as seen
+        // in nextint(), nextFloat()
 
-// .BufferedReader is is synchronized. It uses while dealing with multiple
-// threads.
+        // .BufferedReader is is synchronized. It uses while dealing with multiple
+        // threads.
 
-// .The Scanner is used - For decent input, and easy readab
+        // .The Scanner is used - For decent input, and easy readab
 
+        // System.out.printf("%d",1);//printf means f means format specifier
+        System.out.printf("%s", "Hello world");
+        System.out.printf("Hello %s", "World");
 
-
-// System.out.printf("%d",1);//printf means f means format specifier 
-System.out.printf("%s","Hello world");
-System.out.printf("Hello %s","World");
-
-
-// System.out.println(new Date());
-//Formatted Date
-SimpleDateFormat  sdf = new SimpleDateFormat("yyyy-MM-dd");
-String str = sdf.format(new Date()); //format tpe format
-// System.out.println("Formatted Date :"+ str);
-}
+        // System.out.println(new Date());
+        // Formatted Date
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String str = sdf.format(new Date()); // format tpe format
+        // System.out.println("Formatted Date :"+ str);
+    }
 }
