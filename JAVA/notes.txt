@@ -1,9 +1,0 @@
-- java is platform independent
-- static keyword is already for memory management, like to easily access the memory in the pool of memory , also we don't need object here
-- void it is used to make non return type member function, method as in cpp we use return 0 at last 
-- system.out(system is a class and out is a method)
-- printf(format,args) Eg: System.out.printf("Hello  ")
-- without main function program can't run it's the entry point, class is a name of group of properties , and class contains methods, static makes that var, classes or method don't depend on objects or can call without calling objects, void means null it's a return type, 
-- func,var should be in Camelcase, class in PascalCase, packages in lowercase, constant in upper snakecase like MIN_CAPACITY, 
-- sc.nextInt() gives input as integer, sc.next() or sc.nextLine() for any string, as char doesn't have this so we can use charAt("which index character you want from string") for eg: char ch = sc.next().charAt(0) // here we want 0th string character from given input
-- 
