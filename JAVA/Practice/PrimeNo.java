@@ -3,7 +3,7 @@ import java.util.*;
 public class PrimeNo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt(); 
+        int t = sc.nextInt();
 
         for (int i = 0; i < t; i++) {
             // Input from user
@@ -11,14 +11,14 @@ public class PrimeNo {
 
             if (n <= 1) {
                 System.out.println(n + " is not a prime number");
-                continue; 
+                continue;
             }
 
             int count = 0;
             for (int div = 2; div * div <= n; div++) {
                 if (n % div == 0) {
                     count++;
-                    break; 
+                    break;
                 }
             }
 
@@ -28,6 +28,11 @@ public class PrimeNo {
                 System.out.println(n + " is not a prime number");
             }
         }
-        sc.close(); 
+
+        for (int i = 0; i < t; i++) {
+            int count = 0;
+
+        }
+        sc.close();
     }
 }
