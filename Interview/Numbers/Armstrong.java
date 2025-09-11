@@ -10,8 +10,8 @@ public class Armstrong {
             number = number / 10;
             if (sum > temp) {
                 return false; // early exit
-
-            }}
+            }
+        }
         return sum == temp;
     }
 

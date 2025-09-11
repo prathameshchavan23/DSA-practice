@@ -16,6 +16,13 @@ public class fibonacciNo {
         return b;
     }
 
+    public int fibonacci2(int n) {
+        if (n <= 1) {
+            return n;  // base case
+        }
+        return fibonacci2(n - 1) + fibonacci2(n - 2);
+    }
+
     //Print Fibonacci up to N terms
     public int[] fibonacciUpToN(int n) {
         int[] result = new int[n];

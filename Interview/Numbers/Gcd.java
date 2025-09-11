@@ -22,7 +22,6 @@ public class Gcd {
         return (a * b) / gcd(a, b);
     }
 
-
     public static void main(String[] args) {
         Gcd gcdCalculator = new Gcd();
         System.out.println("GCD (Normal): " + gcdCalculator.gcdnormal(48, 18));

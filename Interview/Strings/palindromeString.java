@@ -2,25 +2,28 @@
 public class palindromeString {
 
     public static boolean isPalindrome(String s) {
-        int left = 0;
-        int right = s.length() - 1;
-        while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
-                return false;
+         int i = 0, j = s.length() - 1;
+
+        while (i < j) {
+            if (s.charAt(i) != s.charAt(j)) {
+                return false;      
             }
-            left++;
-            right--;
+            i++; 
+            j--;
         }
         return true;
     }
 
     public static boolean isPalindrome2(String s) {
-        //* new word is important so it'll create a new StringBuilder object and we'll reverse it and convert it to string again and checks if it's equal to the original
-        return new StringBuilder(s).reverse().toString().equals(s);
+        String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+
+        String reversed = new StringBuilder(cleaned).reverse().toString();
+
+        return cleaned.equals(reversed);
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome("racecar")); // true
-        System.out.println(isPalindrome("hello")); // false
+        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(isPalindrome2(" "));
     }
 }

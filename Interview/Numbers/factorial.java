@@ -19,5 +19,9 @@ public class factorial {
         }
         return n * factorialRecursive(n - 1);
     }
-
+    public static void main(String[] args) {
+        factorial f = new factorial();
+        System.out.println(f.factorial(5)); // Output: 120
+        System.out.println(f.factorialRecursive(5)); // Output: 120
+    }
 }
