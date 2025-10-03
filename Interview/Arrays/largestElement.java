@@ -1,6 +1,8 @@
+
 import java.util.Arrays;
 
 public class largestElement {
+
     // O(n log n)
     public static int findLargest(int[] nums) {
         Arrays.sort(nums);
@@ -8,7 +10,7 @@ public class largestElement {
     }
 
     // O(n)
-    public static int findlarge(int[] nums) { 
+    public static int findlarge(int[] nums) {
         int max = Integer.MIN_VALUE;
         for (int num : nums) {
             if (num > max) {

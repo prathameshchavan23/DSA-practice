@@ -27,11 +27,11 @@ public class occurence {
             System.out.println("Character: " + entry.getKey() + ", Count: " + entry.getValue());
         }
 
-        // int[] arrayResult = countCharactersArray(input);
-        // for (int i = 0; i < arrayResult.length; i++) {
-        //     if (arrayResult[i] > 0) {
-        //         System.out.println("Character: " + (char) i + ", Count: " + arrayResult[i]);
-        //     }
-        // }
+        int[] arrayResult = countCharactersArray(input);
+        for (int i = 0; i < arrayResult.length; i++) {
+            if (arrayResult[i] > 0) {
+                System.out.println("Character: " + (char) i + ", Count: " + arrayResult[i]);
+            }
+        }
     }
 }

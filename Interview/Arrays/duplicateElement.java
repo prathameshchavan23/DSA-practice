@@ -1,26 +1,26 @@
 
 import java.util.Arrays;
 
-public class duplicateElement{
-    // Remove duplicate elements from unsorted array
-    public static int[] removeFromUnsortedArray(int[] nums){
-        return Arrays.stream(nums).distinct().toArray();
-    } 
+public class duplicateElement {
 
-    public static int removeFromSortedArray(int[] nums){
-        if(nums.length==0){
+    // Remove duplicate elements from unsorted array
+    public static int[] removeFromUnsortedArray(int[] nums) {
+        return Arrays.stream(nums).distinct().toArray();
+    }
+
+    public static int removeFromSortedArray(int[] nums) {
+        if (nums.length == 0) {
             return 0;
         }
         int k = 1;
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]!=nums[k-1]){
-                nums[k]=nums[i];
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != nums[k - 1]) {
+                nums[k] = nums[i];
                 k++;
             }
         }
         return k;
     }
-
 
     public static void main(String[] args) {
         int nums[] = {4, 1, 2, 1, 2};

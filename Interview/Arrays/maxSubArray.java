@@ -16,7 +16,7 @@ class maxSubArray {
 
     public static void main(String[] args) {
         maxSubArray obj = new maxSubArray();
-        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int[] nums = {2,5,1,8,2,9};
         System.out.println("Maximum Subarray Sum: " + obj.maxSubArray(nums));
     }
 }

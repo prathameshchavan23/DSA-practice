@@ -9,9 +9,12 @@ public class primeNo {
         if (n <= 1) {
             return false; // 0 and 1 are not prime
         }
-        for (int div = 2; div * div <= n; div++) {
-            if (n % div == 0) {
-                return false; // found a divisor → not prime
+        if (n <= 3) {
+            return true; // 2 and 3 are prime
+        }
+        for (int i = 2; i * i <= n; i++) { // check till sqrt(n)
+            if (n % i == 0) {
+                return false;
             }
         }
         return true; // no divisors → prime
